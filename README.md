@@ -1,19 +1,14 @@
 # Tomato-Leaf-Disease-Classification-with-Transfer-Learning-DenseNet121
 
-## Business Understanding
-Jaya Jaya Institut merupakan salah satu institusi pendidikan perguruan yang telah berdiri sejak tahun 2000. Hingga saat ini ia telah mencetak banyak lulusan dengan reputasi yang sangat baik.
-
 ## Project Overview
 
 This project utilizes transfer learning with the **DenseNet121** architecture to classify different types of **tomato leaf diseases** from images. Early and accurate detection of plant diseases is essential for improving agricultural productivity and minimizing crop loss.
 
----
 
 ## Problem Statement
 
 Tomato crops are vulnerable to various diseases that significantly impact yield and quality. Manual disease detection is time-consuming, error-prone, and requires expert knowledge. To solve this, we aim to build an intelligent, automated classification model to detect tomato leaf diseases based on image data.
 
----
 
 ## Project Objectives
 
@@ -22,7 +17,6 @@ Tomato crops are vulnerable to various diseases that significantly impact yield 
 - Evaluate model performance using metrics such as **accuracy**, **precision**, **recall**, and **F1-score**.
 - Deploy the model for interactive prediction and real-time use in platforms like **Colab** or **Streamlit**.
 
----
 
 ## Dataset
 
@@ -46,8 +40,8 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi secara lokal:
 
 #### 1. Clone Repository
 ```bash
-https://github.com/Matahari-Masalalu/Menyelesaikan-Permasalahan-Institusi-Pendidikan.git
-cd /Menyelesaikan-Permasalahan-Institusi-Pendidikan
+https://github.com/Faishal-Anwar/Tomato-Leaf-Disease-Classification-with-Transfer-Learning.git
+cd /Tomato-Leaf-Disease-Classification-with-Transfer-Learning
 ```
 
 #### 2. Create a Virtual Environment
@@ -76,8 +70,6 @@ Once all dependencies are installed, start the Notebook.
 streamlit run streamlit_app.py
 ```
 
----
-
 ## Model Architecture
 
 - **Base Model**: DenseNet121 (pretrained on ImageNet)
@@ -88,7 +80,6 @@ streamlit run streamlit_app.py
   - `Dense(120, activation='relu')`
   - `Dense(10, activation='softmax')` for classification
 
----
 
 ## Training Setup
 
@@ -99,7 +90,6 @@ streamlit run streamlit_app.py
 - **Epochs**: 100 with EarlyStopping
 - **Label Mode**: Categorical (One-hot)
 
----
 
 ## Evaluation Metrics
 - **Accuracy**: 95%
