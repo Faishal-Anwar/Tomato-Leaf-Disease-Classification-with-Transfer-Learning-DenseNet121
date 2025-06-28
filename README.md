@@ -70,7 +70,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-#### 5. Jalankan Aplikasi Streamlit
+#### 5. run notebook
+Once all dependencies are installed, start the Notebook.
 ```bash
 streamlit run streamlit_app.py
 ```
@@ -124,16 +125,15 @@ streamlit run streamlit_app.py
 | **Weighted Average**                             | 0.933     | 0.933  | 0.932    | 1000    |
 
 
-## Kesimpulan
-Berdasarkan analisis dan pemodelan yang dilakukan, ditemukan beberapa insight penting:
-- Mahasiswa yang tidak membayar tepat waktu, tidak menerima beasiswa, dan memiliki tunggakan cenderung memiliki kemungkinan lebih tinggi untuk dropout.
-- Jurusan tertentu seperti Veterinary Nursing dan Social Service memiliki dropout rate yang signifikan.
-- Mahasiswa laki-laki menunjukkan angka dropout yang lebih tinggi dari perempuan, yang bisa menjadi perhatian lebih lanjut dari pihak institusi.
-  
-## Rekomendasi Action Items
-Berikut beberapa rekomendasi yang dapat diambil oleh Jaya Jaya Institut:
-- Targeted Counseling: Fokuskan pendampingan akademik pada mahasiswa dengan kombinasi faktor risiko (utang, tanpa beasiswa, tidak tepat waktu membayar).
-- Pemberian Beasiswa Adaptif: Perluas cakupan beasiswa untuk mahasiswa dari jurusan atau latar belakang rentan.
-- Monitoring Berkala via Dashboard: Gunakan dashboard secara rutin untuk melihat tren dropout dan intervensi dini.
-- Evaluasi Jurusan Berisiko: Audit internal terhadap jurusan dengan tingkat dropout tinggi untuk mengevaluasi kurikulum, beban studi, atau dukungan dosen.
-- Peningkatan Sistem Informasi Akademik: Integrasi sistem prediksi dropout ke dalam sistem akademik yang sudah ada agar dapat langsung memberikan alert.
+## Conclusion
+
+Through the use of **transfer learning** with **DenseNet121**, this project successfully achieved high accuracy in classifying 10 types of tomato leaf conditions, including various diseases and healthy leaves.
+
+Key findings from this project include:
+
+- The model achieved an overall **accuracy of 93.3%**, with **precision, recall, and F1-scores** consistently above 90% across most classes.
+- Diseases such as **Tomato Mosaic Virus** and **Healthy leaves** were identified with near-perfect precision and recall.
+- The use of transfer learning significantly reduced training time while maintaining strong generalization on validation data.
+- Visual tools such as **confusion matrix** and **classification report** provided interpretable insights into class-wise performance.
+
+This model can serve as a powerful assistive tool for farmers and agricultural experts to quickly and accurately identify tomato leaf diseases, enabling early intervention, better crop management, and reduced dependency on manual inspection.
